@@ -136,7 +136,7 @@ export function PublicationsExplorer({
   const [selectedSecondaryTopic, setSelectedSecondaryTopic] = useState("All");
   const yearFilters = useMemo(() => buildYearFilters(publications), [publications]);
   const [selectedYear, setSelectedYear] = useState("All");
-  const [animatedCount, setAnimatedCount] = useState(0);
+  const [animatedCount, setAnimatedCount] = useState(stats.totalPublications);
   const [activeImage, setActiveImage] = useState<{
     src: string;
     title: string;
@@ -148,17 +148,25 @@ export function PublicationsExplorer({
     const steps = Math.max(1, Math.floor(durationMs / frameMs));
     let currentStep = 0;
 
-    const timer = window.setInterval(() => {
-      currentStep += 1;
-      const progress = Math.min(currentStep / steps, 1);
-      setAnimatedCount(Math.round(stats.totalPublications * progress));
+    let animationTimer: number | undefined;
+    const resetTimer = window.setTimeout(() => {
+      setAnimatedCount(0);
 
-      if (progress >= 1) {
-        window.clearInterval(timer);
-      }
-    }, frameMs);
+      animationTimer = window.setInterval(() => {
+        currentStep += 1;
+        const progress = Math.min(currentStep / steps, 1);
+        setAnimatedCount(Math.round(stats.totalPublications * progress));
 
-    return () => window.clearInterval(timer);
+        if (progress >= 1 && animationTimer) {
+          window.clearInterval(animationTimer);
+        }
+      }, frameMs);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(resetTimer);
+      if (animationTimer) window.clearInterval(animationTimer);
+    };
   }, [stats.totalPublications]);
 
   const secondaryOptions =

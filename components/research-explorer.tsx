@@ -20,8 +20,8 @@ const quasiparticles: Array<{
   label: string;
   image: string;
 }> = [
-  { id: "phonon", label: "Phonon", image: "/research-icons/phonon.png" },
-  { id: "spin", label: "Spin", image: "/research-icons/spin.png" },
+  { id: "phonon", label: "Phonon", image: "/research-icons/Phonon.png" },
+  { id: "spin", label: "Spin", image: "/research-icons/Spin.png" },
   { id: "magnon", label: "Magnon", image: "/research-icons/magnon.png" },
 ];
 
