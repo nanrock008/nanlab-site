@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:publications": "node scripts/sync-publications.mjs",
+    "sync:publication-topics": "node scripts/update-publication-overrides.mjs"
   },
   "dependencies": {
     "next": "16.2.1",
