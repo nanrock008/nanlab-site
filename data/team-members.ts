@@ -31,13 +31,6 @@ export const teamSections: TeamSection[] = [
     title: "Postdoctoral Researchers",
     members: [
       {
-        name: "Guiping Ji",
-        nativeName: "纪桂萍",
-        email: "guipingji@hotmail.com",
-        image: "/team/image2.png",
-        interests: ["Spintronics", "Complex oxides"],
-      },
-      {
         name: "Yuhan Liang",
         nativeName: "梁宇晗",
         email: "yhliang@mail.tsinghua.edu.cn",
@@ -58,13 +51,6 @@ export const teamSections: TeamSection[] = [
         email: "cy-zhang20@mails.tsinghua.edu.cn",
         image: "/team/image4.jpeg",
         interests: ["Sensors", "Acoustic wave devices"],
-      },
-      {
-        name: "Yahui Ji",
-        nativeName: "季雅惠",
-        email: "jiyh20@mails.tsinghua.edu.cn",
-        image: "/team/image5.jpeg",
-        interests: ["Acoustic antennas"],
       },
       {
         name: "Dingsong Jiang",

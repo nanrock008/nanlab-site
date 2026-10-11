@@ -11,7 +11,7 @@ function getNewsImage(item: (typeof newsItems)[number]) {
 }
 
 export default function NewsPage() {
-  const visibleNewsItems = newsItems.slice(0, 4);
+  const visibleNewsItems = newsItems;
 
   return (
     <div className="page-wrap news-page">
@@ -22,7 +22,7 @@ export default function NewsPage() {
 
       <section className="content-section news-archive-section">
         <div className="news-toolbar">
-          <p>{visibleNewsItems.length} latest updates</p>
+          <p>{visibleNewsItems.length} updates</p>
           <div className="news-toolbar-actions" aria-label="News filters">
             <span>Latest first</span>
             <span>All updates</span>

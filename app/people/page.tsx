@@ -4,6 +4,20 @@ import { teamSections } from "@/data/team-members";
 
 const formerMembers = [
   {
+    name: "Guiping Ji",
+    nativeName: "纪桂萍",
+    years: "2022-2026",
+    role: "Postdoc",
+    current: "MRAM Engineer, HIKSTOR",
+  },
+  {
+    name: "Yahui Ji",
+    nativeName: "季雅惠",
+    years: "Graduated September 2026",
+    role: "PhD student",
+    current: "Hardware Technology Researcher, China Railway Signal & Communication Group (CRSC)",
+  },
+  {
     name: "Yahong Chai",
     nativeName: "柴亚红",
     years: "2020-2025",

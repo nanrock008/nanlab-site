@@ -41,11 +41,115 @@ export const manualPublications = [
     "issue": "2",
     "pages": "1450-1463",
     "topics": [],
-    "recent": true
+    "recent": false
+  },
+  {
+    "title": "Polar nano-regions enable large spin Hall conductivity in metallic PtCoO2",
+    "authors": [
+      "Guiping Ji",
+      "Yi Zheng",
+      "Yuejie Zhang",
+      "Yuhan Liang",
+      "Renhuai Wei",
+      "Hang Zhou",
+      "Yuanyuan Jiang",
+      "Yang Zhang",
+      "Hao Lin",
+      "Hao Bai",
+      "Qi Song",
+      "Xiaojiang Li",
+      "Sankalpa Hazra",
+      "Aitian Chen",
+      "Cancheng Xiao",
+      "Dingsong Jiang",
+      "Chao Li",
+      "Zewei Huang",
+      "Yifeng Du",
+      "Witold Skowroński",
+      "Jinming Guo",
+      "Peng Li",
+      "Xixiang Zhang",
+      "Jianshi Tang",
+      "Venkatraman Gopalan",
+      "Darrell G. Schlom",
+      "Luyi Yang",
+      "Wanjun Jiang",
+      "Xuebin Zhu",
+      "Yuan-Hua Lin",
+      "Di Yi",
+      "Pu Yu",
+      "Dingfu Shao",
+      "Daniel C. Ralph",
+      "Rong Yu",
+      "Tianxiang Nan"
+    ],
+    "journal": "Nature Materials",
+    "year": 2026,
+    "doi": "10.1038/s41563-026-02640-4",
+    "url": "https://doi.org/10.1038/s41563-026-02640-4",
+    "volume": "25",
+    "pages": "1769-1775",
+    "topics": [],
+    "recent": false
+  },
+  {
+    "title": "Unconventional magnon-mediated spin torque enabled by ferroelectric domain engineering in multiferroic BiFeO3",
+    "authors": [
+      "Yuhan Liang",
+      "Xingyu Yan",
+      "Xiaoyu Jiang",
+      "Dingsong Jiang",
+      "Hao Bai",
+      "Zi-An Wang",
+      "Hetian Chen",
+      "Xiaofu Qiu",
+      "Daniel Pharis",
+      "Xiaoxi Huang",
+      "Rakshit Jain",
+      "Dingfu Shao",
+      "Wanjun Jiang",
+      "Di Yi",
+      "Daniel C. Ralph",
+      "Tianxiang Nan"
+    ],
+    "journal": "Nature Communications",
+    "year": 2026,
+    "doi": "10.1038/s41467-026-71437-5",
+    "url": "https://doi.org/10.1038/s41467-026-71437-5",
+    "volume": "17",
+    "pages": "5140",
+    "topics": [],
+    "recent": false
   }
 ] as const;
 
 export const publicationOverrides: Record<string, PublicationOverride> = {
+  "10.1038/s41563-026-02640-4": {
+  "topics": [
+    "Spintronics"
+  ],
+  "keywords": [
+    "Spin-orbit torque"
+  ],
+  "recent": true,
+  "publicationDate": "2026-06-12",
+  "summary": "Polar nano-regions in metallic PtCoO2 boost charge-to-spin conversion while retaining high electrical conductivity, enabling spin-orbit torque switching at lower voltage and power.",
+  "image": "/recent-publications/ptcoo2-feature.png"
+},
+  "10.1038/s41467-026-71437-5": {
+  "topics": [
+    "Spintronics"
+  ],
+  "keywords": [
+    "Magnon transport",
+    "Spin-orbit torque",
+    "Voltage-control magnetization"
+  ],
+  "recent": true,
+  "publicationDate": "2026-04-10",
+  "summary": "Engineering ferroelectric domains in BiFeO3 redirects magnon spin polarization, enabling deterministic, field-free magnetization switching beyond the symmetry limits of conventional spin sources.",
+  "image": "/recent-publications/bifeo3-feature.png"
+},
   "10.1002/adfm.202518681": {
     "topics": [
       "Spintronics"
@@ -54,7 +158,7 @@ export const publicationOverrides: Record<string, PublicationOverride> = {
       "Magnon transport",
       "Voltage-control magnetization"
     ],
-    "recent": true,
+    "recent": false,
     "category": "Article",
     "publicationDate": "2025-10-05",
     "summary": "Crystal symmetry in multiferroic oxides is used to tune anisotropic magnon transport, revealing a path toward electrically reconfigurable spin-wave devices.",
@@ -69,7 +173,7 @@ export const publicationOverrides: Record<string, PublicationOverride> = {
       "Magnon transport",
       "Spin-orbit torque"
     ],
-    "recent": true,
+    "recent": false,
     "category": "Article",
     "publicationDate": "2025-07-04",
     "summary": "Interfacial coupling is shown to switch antiferromagnetic magnon transport between conducting, weakly anisotropic, and insulating regimes in oxide multilayers.",
@@ -82,7 +186,7 @@ export const publicationOverrides: Record<string, PublicationOverride> = {
       "Antennas",
       "Acoustics"
     ],
-    "recent": true,
+    "recent": false,
     "keywords": [
       "Acoustic antenna"
     ],
